@@ -105,3 +105,13 @@ print(not False)
 # ------------------------------
 # False
 # True
+
+a = 6
+b = 9
+
+print(f"Porownanie {a} > {b} = {a > b}")  # Porownanie 6 > 9 = False
+print(f"Porownanie {a} < {b} = {a < b}")  # Porownanie 6 < 9 = True
+print(f"Porownanie {a} >= {b} = {a >= b}")  # Porownanie 6 >= 9 = False
+print(f"Porownanie {a} <= {b} = {a <= b}")  # Porownanie 6 <= 9 = True
+
+print(f"Porównanie {a <= b = }") # Porównanie a <= b = True
