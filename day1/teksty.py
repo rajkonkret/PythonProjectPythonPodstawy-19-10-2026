@@ -59,4 +59,50 @@ print(type(encode_s))  # <class 'bytes'> typ bajtowy
 
 print(encode_s.decode('utf-8'))  # Witaj Świecie
 
+imie = "Radek"
+print(len(imie))  # długość 5
 
+# Mam na imię ... .
+print("Mam na imię " + imie + ".")
+# Mam na imię Radek.
+
+print("Mam na imie", imie, ".")
+# Mam na imie Radek .
+
+# f-string - wstrzyknięcie zawartości zmiennej do tekstu
+tekst_format = f"Mam na imię {imie}."
+print(tekst_format)  # Mam na imię Radek.
+
+tekst_format = f"\tMam na imię {imie}.\n Lubię Pyhtona.\b"
+# \t - tabulator
+# \n - nowa linia
+# \b - backspace
+print(tekst_format)
+# "	 Mam na imię Radek.
+#  Lubię Pyhtona"
+
+print(f"""  Mam na imię {imie}
+i lubię Pythona.
+""")
+# "  Mam na imię Radek
+# i lubię Pythona."
+
+"""
+Komentarz 
+    wielolinijkowy - docstring"""
+
+print(print.__doc__)
+#   sep
+#     string inserted between values, default a space.
+#   end
+#     string appended after the last value, default a newline.
+#   file
+#     a file-like object (stream); defaults to the current sys.stdout.
+#   flush
+#     whether to forcibly flush the stream.
+
+print("Imie:", imie)  # Imie: Radek
+print("Imie:", imie, sep="_ _")  # Imie:_ _Radek
+
+print("Radek", end="-")
+print("Tomek")  # Radek-Tomek
