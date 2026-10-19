@@ -42,3 +42,4 @@ print(tekst.lower().count("w"))  # występuje 2 razy
 
 # Witaj Świecie
 # 01234567890... numerowanie od zera
+print(tekst.count("j", 0, 4))  # wystepuje 0, z prawej zbiór otwarty -> 0123
