@@ -118,3 +118,6 @@ print(f"Porównanie {a <= b = }")  # Porównanie a <= b = True
 
 print(f"Porównanie {a} == {b} = {a == b}")  # czy są równe: Porównanie 6 == 9 = False
 print(f"Porównanie {a} != {b} = {a != b}")  # czy są różne!!!: Porównanie 6 != 9 = True
+
+# https://www.hackerrank.com/
+# https://www.w3schools.com/python/default.asp
