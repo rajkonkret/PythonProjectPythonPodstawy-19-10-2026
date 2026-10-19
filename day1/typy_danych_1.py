@@ -96,3 +96,12 @@ print(True or True)
 # False
 # True
 # True
+
+print(30 * "-")
+
+# not - negacja
+print(not True)
+print(not False)
+# ------------------------------
+# False
+# True
