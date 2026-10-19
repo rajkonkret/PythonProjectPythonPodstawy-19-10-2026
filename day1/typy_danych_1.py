@@ -24,3 +24,12 @@ print(len(str(wiek ** rok)))  # potęgowanie, długosc 3388
 
 print(54 - 5 * 43 + 4 / 2 + 4 / 2)  # -157.0
 print(54 - 5 * 43 + (4 / 2 + 4) / 2)  # -158.0
+
+# błąd zaokrąglenia
+print(0.2 + 0.8)  # 1.0
+print(0.2 + 0.7)  # 0.8999999999999999
+print(0.1 + 0.3)  # 0.4
+print(0.1 + 0.2)  # 0.30000000000000004
+
+# For example, in a floating-point arithmetic with five base-ten digits,
+# the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345.
