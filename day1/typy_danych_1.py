@@ -41,3 +41,31 @@ print(sys.float_info)
 # min_exp=-1021, min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
 
 # decimal() - pozwala ominąc problem zaokrąglenia
+
+# typ logiczny
+# prawda, fałsz
+# True, False
+# 1, 0
+
+czy_znasz_pythona = True
+print(czy_znasz_pythona)  # True
+print(type(czy_znasz_pythona))  # <class 'bool'>, boolean, typ logiczy
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+# bool() rzutowanie na typ logiczny
+print(bool(1))  # True
+print(bool(0))  # False
+
+print(bool(100))  # True
+print(bool(-100))  # True
+
+print(bool("Radek"))  # True
+
+print(bool(""))  # False
+
+print(bool("0"))  # True
+
+print(None)  # odpowiednik null, stan nieokreslony, nie wiem
+print(bool(None))  # False
