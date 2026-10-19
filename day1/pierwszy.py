@@ -46,3 +46,44 @@ print(int("39") + int(30))  # 69
 print("Radek" + str(1))  # Radek1
 
 print(168 * "35")  # mnożenie tekstów
+
+# zmienna - pudełko, szufladka na dane
+
+name = "Radek"
+print(name)  # Radek
+print(type(name))  # <class 'str'>
+
+age = 89
+print(age)  # 89
+print(type(age))  # <class 'int'>
+
+# typowanie dynamiczne
+age = 'Radek'
+print(age)  # Radek
+print(type(age))  # <class 'str'>
+
+age = "90"
+# print(age + 10)  # TypeError: can only concatenate str (not "int") to str
+
+print(age * 2)  # 9090
+
+# podpowiedzi typów
+name: str = "Radek"
+print(name)
+print(type(name))
+
+name = 90
+print(name)  # 90
+
+# mypy, pyright, ruff
+# pip - menadżer pakietów
+# pip install mypy
+# cd .\day1\ - zmmiana katalogu
+# mypy .\pierwszy.py
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPythonPodstawy-19-10-2026\day1> mypy .\pierwszy.py
+# pierwszy.py:61: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
+# pierwszy.py:65: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
+# pierwszy.py:71: error: Name "name" already defined on line 52  [no-redef]
+# pierwszy.py:75: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# Found 4 errors in 1 file (checked 1 source file)
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPythonPodstawy-19-10-2026\day1>
