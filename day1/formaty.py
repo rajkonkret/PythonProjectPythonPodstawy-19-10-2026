@@ -36,3 +36,8 @@ print(f"Używamy wersji Pythona {wersja:.2f}")  # Używamy wersji Pythona 3.90
 print(f"Używamy wersji Pythona {wersja:.1f}")  # Używamy wersji Pythona 3.9
 print(f"Używamy wersji Pythona {wersja:.0f}")  # Używamy wersji Pythona 4
 # print(f"Używamy wersji Pythona {wersja:.f}")  # ValueError: Format specifier missing precision
+
+print(f"{user:<10}") # "Tomek   "
+print(f"{user:>15}") # "          Tomek"
+print(f"{user:^15}") # "     Tomek     "
+print(f"{user:.^15}") # ".....Tomek....."
