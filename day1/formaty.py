@@ -37,7 +37,13 @@ print(f"Używamy wersji Pythona {wersja:.1f}")  # Używamy wersji Pythona 3.9
 print(f"Używamy wersji Pythona {wersja:.0f}")  # Używamy wersji Pythona 4
 # print(f"Używamy wersji Pythona {wersja:.f}")  # ValueError: Format specifier missing precision
 
-print(f"{user:<10}") # "Tomek   "
-print(f"{user:>15}") # "          Tomek"
-print(f"{user:^15}") # "     Tomek     "
-print(f"{user:.^15}") # ".....Tomek....."
+print(f"{user:<10}")  # "Tomek   "
+print(f"{user:>15}")  # "          Tomek"
+print(f"{user:^15}")  # "     Tomek     "
+print(f"{user:.^15}")  # ".....Tomek....."
+
+print(liczba)  # 908789765453123
+print(f"Nasza duża liczba: {liczba:,}")  # Nasza duża liczba: 908,789,765,453,123
+print(f"Nasza duża liczba: {liczba:_}")  # Nasza duża liczba: 908_789_765_453_123
+print(f"Nasza duża liczba: {liczba:_}".replace("_", " "))  # Nasza duża liczba: 908 789 765 453 123
+print(f"Nasza duża liczba: {liczba:_}".replace("_", "."))  # Nasza duża liczba: 908.789.765.453.123
