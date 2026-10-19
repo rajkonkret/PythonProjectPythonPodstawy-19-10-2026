@@ -106,3 +106,9 @@ print("Imie:", imie, sep="_ _")  # Imie:_ _Radek
 
 print("Radek", end="-")
 print("Tomek")  # Radek-Tomek
+
+starszy = "Witaj %s!"  # %s - str
+print(starszy % imie)  # Witaj Radek!
+
+# zabraniam używac
+print("Witaj {}!".format("Radek"))  # Witaj Radek!
