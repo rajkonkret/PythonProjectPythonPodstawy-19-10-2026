@@ -39,3 +39,23 @@ print(zbior)  # {66, 777, 11, 44, 12, 18, 22, 24, 25}
 zmienna = zbior.pop()
 print(f"Zmienna: {zmienna}")  # Zmienna: 66
 print("Zmienna:", zmienna)  # Zmienna: 66
+
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
+print(zbior_2)
+print(type(zbior_2))
+# {18, 667, 52, 11, 44, 12.34, 62}
+# <class 'set'>
+
+# operacje na zbiorach - zwraca nowy zbior
+# suma zbiorów
+print(zbior | zbior_2)  # {777, 11, 44, 12, 12.34, 18, 52, 22, 24, 25, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12, 12.34, 18, 52, 22, 24, 25, 667, 62}
+
+# częśc wspólna zbiorów
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# różnica zbiorów
+print(zbior - zbior_2)  # {777, 12, 22, 24, 25}
+print(zbior.difference(zbior_2))  # {777, 12, 22, 24, 25}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
