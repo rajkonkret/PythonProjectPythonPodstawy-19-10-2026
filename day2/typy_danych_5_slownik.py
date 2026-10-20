@@ -64,3 +64,8 @@ print(name1.casefold() == name2.casefold())  # True
 dictionary.update({'data': '12-12-2067'})
 print(dictionary)
 # {'imie': ['Radek', 'Tomek', 'Anna'], 'wiek': 54, 'data': '12-12-2067'}
+
+# [('imie', 'Radek'), ('wiek', 54)]
+dict_small = {'x': 20}
+dict_small.update([('y', 3), ("z", 78)])
+print(dict_small)  # {'x': 20, 'y': 3, 'z': 78}
