@@ -87,3 +87,16 @@ print(dict_small)  # {'x': 20, 'y': 3, 'z': 78}
 # # Podaj wartość b:5
 # # 9.0
 
+# napisac program słownik pol-ang
+pol_ang = {'pies': "dog", "kot": "cat", "dach": "roof"}
+print("Znam takie słowa:", pol_ang.keys())
+odp = input("Podaj słówko do przetłumacznia: ")
+print(f"""
+Prawidłowa odpowiedz dla: {odp}
+to: {pol_ang.get(odp.strip().casefold(), "Nie ma takiego słówka w słowniku")}
+""")
+# Znam takie słowa: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słówko do przetłumacznia:  Kot
+#
+# Prawidłowa odpowiedz dla:  Kot
+# to: cat
