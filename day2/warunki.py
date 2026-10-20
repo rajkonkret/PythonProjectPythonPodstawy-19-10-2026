@@ -98,8 +98,14 @@ if (n := len(a)) > 3:
 
 zarobki = int(input("Podaj zarobki: "))
 
+# kolejność warunków ma znaczenie
+# jeden spełniony -> wyjście z ifa
 if zarobki < 10_000:
     podatek = 0
+elif zarobki < 40_000:
+    podatek = 0.2
+elif zarobki < 100_000:
+    podatek = 0.4
 else:
     podatek = 0.9
 
