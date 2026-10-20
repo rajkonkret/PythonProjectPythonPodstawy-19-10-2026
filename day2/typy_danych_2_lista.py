@@ -64,3 +64,25 @@ print(lista[0:-2])  # ['Radek', 'Tomek', 'Klaudia', 'Anna']
 a = None
 b = None
 print(lista[a:b])  # ['Radek', 'Tomek', 'Klaudia', 'Anna', 'Darek', 'Kasia']
+
+# wygenerowac liste z zakresu 0 do 14
+# lista_15  =[0,1,2...]
+lista_15 = list(range(15))  # od 0 do 14
+print(lista_15)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+print(lista_15[::2])  # [0, 2, 4, 6, 8, 10, 12, 14], [start:stop:krok]
+print(lista_15[::3])  # [0, 3, 6, 9, 12]
+
+print(lista_15[::-1])  # odwrotna kolejność
+# [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+print(list(range(5, 15, 2)))  # [5, 7, 9, 11, 13] (start, stop, krok)
+
+lista1 = [1, 2, 3]
+lista2 = [7, 8, 9]
+print(lista1 + lista2)  # [1, 2, 3, 7, 8, 9]
+
+lista1.append(list(range(5, 9)))  # jako lista w liscie
+print(lista1)  # [1, 2, 3, [5, 6, 7, 8]]
+lista2.extend(list(range(5, 9)))  # jako kolejne elementy listy
+print(lista2)  # [7, 8, 9, 5, 6, 7, 8]
