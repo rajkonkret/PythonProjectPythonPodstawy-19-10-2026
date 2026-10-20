@@ -194,3 +194,18 @@ print(lista_copy)  # ['Anna', 'Darek', 'Kasia', 'Ola', 'Radek', 'Karolina']
 lista_copy.sort(reverse=True)
 print(lista_copy)
 # ['Radek', 'Ola', 'Kasia', 'Karolina', 'Darek', 'Anna']
+
+tekst = "Pyth on ."
+
+# rozpakowanie sekwencji
+# list(), []
+lista_tekst = list(tekst)
+print(lista_tekst)
+# ['P', 'y', 't', 'h', ' ', 'o', 'n', ' ', '.']
+
+lista = [tekst]
+print(lista)  # ['Pyth on .']
+
+krotka = tuple(lista_copy)
+print(krotka)
+# ('Radek', 'Ola', 'Kasia', 'Karolina', 'Darek', 'Anna')
