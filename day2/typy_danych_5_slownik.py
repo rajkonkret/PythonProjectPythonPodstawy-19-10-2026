@@ -46,3 +46,17 @@ print(dictionary['Imie'.lower()])  # ['Radek', 'Tomek', 'Anna']
 
 print(dictionary.get("Imie"))  # None
 print(dictionary.get("Imie", "default"))  # default
+
+print(chr(223))  # ß
+# \xhh szesnatkowy kod znaku
+print("\u00DF")  # ß
+# \N{name}
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß
+
+name1 = "GROSS"
+name2 = "groß"
+
+print(name1 == name2)  # False
+print(name1.lower() == name2.lower())  # False
+# Return a version of the string suitable for caseless comparisons.
+print(name1.casefold() == name2.casefold())  # True
