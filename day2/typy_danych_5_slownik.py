@@ -69,3 +69,10 @@ print(dictionary)
 dict_small = {'x': 20}
 dict_small.update([('y', 3), ("z", 78)])
 print(dict_small)  # {'x': 20, 'y': 3, 'z': 78}
+
+# input() - możliwosć wprowadzenia danych do komputera np.:  z klawiatury
+
+tekst = input("Podaj imię: ")
+print(tekst)
+# Podaj imię: Radek
+# Radek
