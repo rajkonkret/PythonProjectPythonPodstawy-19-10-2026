@@ -60,3 +60,7 @@ print(name1 == name2)  # False
 print(name1.lower() == name2.lower())  # False
 # Return a version of the string suitable for caseless comparisons.
 print(name1.casefold() == name2.casefold())  # True
+
+dictionary.update({'data': '12-12-2067'})
+print(dictionary)
+# {'imie': ['Radek', 'Tomek', 'Anna'], 'wiek': 54, 'data': '12-12-2067'}
