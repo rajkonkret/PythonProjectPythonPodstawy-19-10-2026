@@ -126,3 +126,11 @@ print(lista)  # ['Radek', 'Ola', 'Anna', 'Darek', 'Kasia', 'Tomek']
 
 zmienna = lista.pop()  # usunie ostatni element
 print(zmienna)  # Tomek
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
