@@ -160,3 +160,37 @@ print(type(liczby))  # <class 'list'>
 # nadpisac czwart element inną liczbą
 # wyciągnąć elementy od pierwszego do trzeciego włącznie
 # wypisac po indeksie dodatnim i ujemnym
+print(liczby)
+liczby[3] = 666
+print(liczby[0:3])
+print(liczby[-3])
+print(liczby[3])
+print(liczby[-3:])
+# [54, 999, 12.34, 34, 567, 999]
+# [54, 999, 12.34]
+# 666
+# 666
+# [666, 567, 999]
+
+liczby = [54, 999, 12.34, 34, 567, 999]
+liczby.sort()  # zmienia oryginał
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
+liczby.append("A")
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+print(ord("A"))  # kod znaku "A", 65
+# print(ord("AB"))  # TypeError: ord() expected a character, but string of length 2 found
+print(chr(65))  # A
+
+print(lista_copy)  # ['Radek', 'Ola', 'Anna', 'Darek', 'Kasia']
+lista_copy.sort()
+print(lista_copy)  # ['Anna', 'Darek', 'Kasia', 'Ola', 'Radek']
+
+lista_copy.append("Karolina")
+print(lista_copy)  # ['Anna', 'Darek', 'Kasia', 'Ola', 'Radek', 'Karolina']
+
+lista_copy.sort(reverse=True)
+print(lista_copy)
+# ['Radek', 'Ola', 'Kasia', 'Karolina', 'Darek', 'Anna']
