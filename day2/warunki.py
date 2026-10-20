@@ -124,3 +124,7 @@ print(f"Rabat wynosi: {rabat}")
 rabat = 25 if sum_zam > 100 else 0
 print(f"Rabat wynosi: {rabat}")
 # Rabat wynosi: 25
+
+# napisac test z...
+# trzy pytania
+# punktacja za prawidłową odpowiedź
