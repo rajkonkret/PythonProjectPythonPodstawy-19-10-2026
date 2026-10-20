@@ -86,3 +86,11 @@ lista1.append(list(range(5, 9)))  # jako lista w liscie
 print(lista1)  # [1, 2, 3, [5, 6, 7, 8]]
 lista2.extend(list(range(5, 9)))  # jako kolejne elementy listy
 print(lista2)  # [7, 8, 9, 5, 6, 7, 8]
+
+# python nie ma typu danych tablica (array)
+tablica = [[1, 2], [3, 4]]
+print(tablica)
+# numpy - biblioteka do pracy z tablicami/macierzami
+
+print(lista)
+# ['Radek', 'Tomek', 'Klaudia', 'Anna', 'Darek', 'Kasia']
