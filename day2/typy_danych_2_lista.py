@@ -53,3 +53,14 @@ print(lista[2:10])  # ['Klaudia', 'Anna', 'Darek', 'Kasia']
 print(lista[15:20])  # [] - pusta lista
 
 print(lista[:])  # ['Radek', 'Tomek', 'Klaudia', 'Anna', 'Darek', 'Kasia']
+
+# ['Radek', 'Tomek', 'Klaudia', 'Anna', 'Darek', 'Kasia']
+#     0        1         2         3       4        5
+#     -6       -5        -4        -3      -2       -1
+
+print(lista[-2:0])  # [] -> [4:0]
+print(lista[0:-2])  # ['Radek', 'Tomek', 'Klaudia', 'Anna']
+
+a = None
+b = None
+print(lista[a:b])  # ['Radek', 'Tomek', 'Klaudia', 'Anna', 'Darek', 'Kasia']
