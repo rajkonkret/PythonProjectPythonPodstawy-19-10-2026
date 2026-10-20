@@ -59,13 +59,31 @@ else:
 # jesli od 60 do 89 -> Egzamin zdany
 # w przeciwnym razie -> Egzamin niezdany
 
-punkty = int(input("Podaj liczbę punktów: "))
+# punkty = int(input("Podaj liczbę punktów: "))
+#
+# if punkty >= 90:
+#     print("Bardzo dobry wynik")
+# elif punkty >= 60:
+#     print("Egzamin zdany")
+# else:
+#     print("Egzamin niezdany")
+# # Podaj liczbę punktów: 60
+# # Egzamin zdany
 
-if punkty >= 90:
-    print("Bardzo dobry wynik")
-elif punkty >= 60:
-    print("Egzamin zdany")
-else:
-    print("Egzamin niezdany")
-# Podaj liczbę punktów: 60
-# Egzamin zdany
+a = "Radek"
+# jezeli długośc tekstu większa niz 3 wypisac:
+# "Długość wynosi: ..., wiecej niż 3."
+
+if len(a) > 3:
+    print(f"Długość wynosi: {len(a)}, wiecej niż 3.")
+# Długość wynosi: 5, wiecej niż 3.
+
+n = len(a)
+if n > 3:
+    print(f"Długość wynosi: {n}, wiecej niż 3.")
+# Długość wynosi: 5, wiecej niż 3.
+
+# walrus operator, operator morsa
+if (n := len(a)) > 3:
+    print(f"Długość wynosi: {n}, wiecej niż 3.")
+# Długość wynosi: 5, wiecej niż 3.
