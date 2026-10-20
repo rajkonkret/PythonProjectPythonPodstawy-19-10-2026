@@ -159,4 +159,4 @@ print(type(liczby))  # <class 'list'>
 # wypisac liczby
 # nadpisac czwart element inną liczbą
 # wyciągnąć elementy od pierwszego do trzeciego włącznie
-# wypisac po indeksie dodtanim i ujemnym
+# wypisac po indeksie dodatnim i ujemnym
