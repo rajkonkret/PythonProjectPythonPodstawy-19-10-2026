@@ -94,3 +94,35 @@ print(tablica)
 
 print(lista)
 # ['Radek', 'Tomek', 'Klaudia', 'Anna', 'Darek', 'Kasia']
+
+# nadpisanie na wskazanym indeksie
+lista[2] = "Alicja"
+print(lista)  # ['Radek', 'Tomek', 'Alicja', 'Anna', 'Darek', 'Kasia']
+
+# dopisanie elementu we wskazanym miejscu (indeksie)
+lista.insert(1, "Ola")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Alicja', 'Anna', 'Darek', 'Kasia']
+
+# sprawdzenie indeksu
+print(lista.index("Darek"))  # 5
+
+# dopiszcie do listy taki elementy jak juz jest
+lista.append("Tomek")
+print(lista)
+print(lista.index("Tomek"))
+# ['Radek', 'Ola', 'Tomek', 'Alicja', 'Anna', 'Darek', 'Kasia', 'Tomek']
+# 2
+
+# usnięcie elemntu z listy, pierwszy napotkany od lewej
+lista.remove("Tomek")
+print(lista)
+# ['Radek', 'Ola', 'Alicja', 'Anna', 'Darek', 'Kasia', 'Tomek']
+
+# usunięcie po indeksie, zwraca usunięty element
+# pop()
+print(lista.pop(2))  # Alicja
+print(lista)  # ['Radek', 'Ola', 'Anna', 'Darek', 'Kasia', 'Tomek']
+
+zmienna = lista.pop()  # usunie ostatni element
+print(zmienna)  # Tomek
