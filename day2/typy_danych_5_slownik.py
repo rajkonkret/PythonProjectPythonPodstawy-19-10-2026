@@ -72,7 +72,18 @@ print(dict_small)  # {'x': 20, 'y': 3, 'z': 78}
 
 # input() - możliwosć wprowadzenia danych do komputera np.:  z klawiatury
 
-tekst = input("Podaj imię: ")
-print(tekst)
-# Podaj imię: Radek
-# Radek
+# ctrl / - komentarz
+# tekst = input("Podaj imię: ")
+# print(tekst)
+# # Podaj imię: Radek
+# # Radek
+
+# # napisać aplikację kalkulator
+# # a + b
+# a = int(input("Podaj wartość a:"))  # zwraca str
+# b = input("Podaj wartość b:")
+# print(a + float(b))
+# # Podaj wartość a:4
+# # Podaj wartość b:5
+# # 9.0
+
