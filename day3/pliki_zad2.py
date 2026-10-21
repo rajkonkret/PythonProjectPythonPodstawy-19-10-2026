@@ -35,3 +35,4 @@ print(raw_data.decode(encoding=encoding))
 # Dodane
 # Dodane
 # Dośdane
+# charset_normalizer
