@@ -168,3 +168,9 @@ print("Punkty:", punkty)
 # Jaki Król jest na banknocie 200 zł: Zygmunt
 # Opowiedź prawidłowa
 # Punkty: 3
+
+# zasymulejmy system zbierania logów
+# zmienna: typ_sytemu -> console, email, inny
+# console: "Stało się coś strasznego!"
+# email: "System email"
+# -----
