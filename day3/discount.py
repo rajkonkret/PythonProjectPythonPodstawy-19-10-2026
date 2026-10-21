@@ -47,5 +47,11 @@ tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2026-10-22
 
 products = [
-
+    {"sku": 1, 'exp_date': today, "price": 200},
+    {"sku": 2, 'exp_date': today, "price": 300},
+    {"sku": 3, 'exp_date': tomorrow, "price": 400},
+    {"sku": 4, 'exp_date': today, "price": 1200},
+    {"sku": 5, 'exp_date': today, "price": 900},
+    {"sku": 6, 'exp_date': tomorrow, "price": 200.99},
+    {"sku": 7, 'exp_date': today, "price": 100},
 ]
