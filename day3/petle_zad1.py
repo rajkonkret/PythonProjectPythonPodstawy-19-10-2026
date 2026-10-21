@@ -150,3 +150,12 @@ print("Po zakończeniu pętli")
 # 8 Większe niż 4
 # 8 Za każdym przejsciem pętli
 # Po zakończeniu pętli
+
+for i in range(-10, 0):
+    print(i)
+
+for i in range(-10, 0, 2):  # start, stop, krok
+    print(i)
+
+for i in range(10, 0, -2):
+    print(i)
