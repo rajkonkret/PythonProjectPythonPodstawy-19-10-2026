@@ -49,3 +49,17 @@ print("Radek")  # imie<==>Radek | nazwisko<==>Kowalski | Radek
 print("Nowa linia")
 # imie<==>Radek | nazwisko<==>Kowalski | Radek
 # Nowa linia
+
+pol_ang = {'pies': "dog", "kot": "cat", "dach": "roof"}
+# zrobic ang_pol
+
+ang_pol = {}
+for k, v in pol_ang.items():
+    ang_pol[v] = k
+
+print(ang_pol)
+# {'dog': 'pies', 'cat': 'kot', 'roof': 'dach'}
+
+# dict comprehensions
+print({v: k for k, v in pol_ang.items()})
+# {'dog': 'pies', 'cat': 'kot', 'roof': 'dach'}
