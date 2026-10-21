@@ -39,3 +39,36 @@ for i in range(10):
 
 # lotto jako pętla
 # wyniki do listy
+import random
+
+listy_wyl = []
+
+# lista_kul = list(range(1, 50))
+# print(lista_kul)
+# 10 lsowań
+
+for losowanie in range(0, 10):
+    lista_kul = list(range(1, 50))
+    listy_wyl = []
+    for _ in range(6):
+        kula = random.choice(lista_kul)
+        lista_kul.remove(kula)
+        # print(kula)  # 10
+        listy_wyl.append(kula)
+
+    # print(listy_wyl)
+    print(losowanie, listy_wyl)
+# [9, 19, 41, 36, 4, 26]
+
+# parzyste do listy 0 9
+
+lista3 = []
+for i in range(10):
+    if i % 2 == 0:
+        lista3.append(i)
+
+print(lista3)  # [0, 2, 4, 6, 8]
+
+# list comprehensions
+lista3 = [j for j in range(10) if j % 2 == 0]
+print(lista3)  # [0, 2, 4, 6, 8]
