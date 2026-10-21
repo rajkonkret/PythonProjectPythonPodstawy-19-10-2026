@@ -159,3 +159,53 @@ for i in range(-10, 0, 2):  # start, stop, krok
 
 for i in range(10, 0, -2):
     print(i)
+
+# lista_nazwy = ["Ala", "Tomek", "Zenek", "Basia"]
+lista_nazwy = ["Ala", "Tomek", "Zenek", "Basia", "Radek"]
+wiek = [24, 18, 34, 20]
+
+# Ala 24
+# dla róznych długości list
+# IndexError: list index out of range
+# for i in range(len(lista_nazwy)):
+#     print(f"wiek: {wiek[i]}, osoba: {lista_nazwy[i]}")
+# # wiek: 24, osoba: Ala
+# # wiek: 18, osoba: Tomek
+# # wiek: 34, osoba: Zenek
+# # wiek: 20, osoba: Basia
+
+# zip() - łączy kolekcje
+for i in zip(lista_nazwy, wiek):
+    print(i)
+# ('Ala', 24)
+# ('Tomek', 18)
+# ('Zenek', 34)
+# ('Basia', 20)
+
+for o, w in zip(lista_nazwy, wiek):
+    print(o, w)
+# Ala 24
+# Tomek 18
+# Zenek 34
+# Basia 20
+
+# 0 Ala 24
+for i in enumerate(zip(lista_nazwy, wiek)):
+    print(i)
+# (0, ('Ala', 24))
+# (1, ('Tomek', 18))
+# (2, ('Zenek', 34))
+# (3, ('Basia', 20))
+a, b = (0, ('Ala', 24))
+print(a, b)  # 0 ('Ala', 24)
+c, d = ('Ala', 24)
+print(c, d)  # Ala 24
+
+a, (b, c) = (0, ('Ala', 24))
+
+for i, (o, w) in enumerate(zip(lista_nazwy, wiek)):
+    print(i, o, w)
+# 0 Ala 24
+# 1 Tomek 18
+# 2 Zenek 34
+# 3 Basia 20
