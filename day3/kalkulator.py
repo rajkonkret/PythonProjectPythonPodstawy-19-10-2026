@@ -14,12 +14,12 @@ while True:
 """)
 
     odp = input("Wybierz opcję z menu: ")
+    if odp not in ['1', '2', '3', '4']:
+        break
+
     try:
         a = float(input("Podaj pierwsza liczbę: "))
         b = float(input("Podaj drugą liczbę: "))
-
-        if odp not in ['1', '2', '3', '4']:
-            break
 
         if odp == "1":
             print(f"Dodawanie: {a} + {b} = {a + b}")
