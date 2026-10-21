@@ -41,3 +41,15 @@ products = [
     {"sku": 6, 'exp_date': 'tomorrow', "price": 200.99},
     {"sku": 7, 'exp_date': 'today', "price": 100},
 ]
+
+# filename = "records_discount.csv"
+filename = "records_discount_semicolon.csv"
+list_columns = [key for key in products[0]]
+list_columns = products[0].keys()
+print(list_columns)
+
+with open(filename, "w", newline="") as f:
+    # csv_writer = csv.DictWriter(f, fieldnames=list_columns)
+    csv_writer = csv.DictWriter(f, fieldnames=list_columns, delimiter=";")
+    csv_writer.writeheader()
+    csv_writer.writerows(products)  # writerows - dla listy słowników
