@@ -72,3 +72,12 @@ print(lista3)  # [0, 2, 4, 6, 8]
 # list comprehensions
 lista3 = [j for j in range(10) if j % 2 == 0]
 print(lista3)  # [0, 2, 4, 6, 8]
+
+# wypisac elementy z listy za pomoca for
+# indeksy elementów
+for i in range(len(lista3)):
+    print(f"wartośc: {lista3[i]}")
+
+for c in lista3:  # pod c podstawia kolejne elementy listy
+    print(c)
+
