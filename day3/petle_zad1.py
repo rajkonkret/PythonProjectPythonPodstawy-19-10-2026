@@ -127,3 +127,26 @@ for i, o in enumerate(lista_nazwy, start=1):
 # 2 Tomek
 # 3 Zenek
 # 4 Basia
+
+print(lista3)
+
+for c in lista3:
+    if c > 4:
+        print(c, "Większe niż 4")
+    elif c == 4:
+        print(c, "Równa 4")
+    else:
+        print(c, "Mniejsze niż 4")
+    print(c, "Za każdym przejsciem pętli")
+print("Po zakończeniu pętli")
+# 0 Mniejsze niż 4
+# 0 Za każdym przejsciem pętli
+# 2 Mniejsze niż 4
+# 2 Za każdym przejsciem pętli
+# 4 Równa 4
+# 4 Za każdym przejsciem pętli
+# 6 Większe niż 4
+# 6 Za każdym przejsciem pętli
+# 8 Większe niż 4
+# 8 Za każdym przejsciem pętli
+# Po zakończeniu pętli
