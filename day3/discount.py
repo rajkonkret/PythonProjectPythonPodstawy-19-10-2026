@@ -26,3 +26,22 @@ print(type(formated_date))  # <class 'str'>
 # 12:57
 # 12:57:34
 # 12:57 pm
+
+formated_time = datetime.now().strftime("%H:%M")
+print(formated_time)  # 13:00
+print(type(formated_time))  # <class 'str'>
+
+formated_time_usa = datetime.now().strftime("%I:%M %p")
+print(formated_time_usa)  # 01:01 PM
+print(formated_time_usa.removeprefix("0"))  # 1:02 PM
+print(type(formated_time_usa))  # <class 'str'>
+
+object_data = datetime.now().strptime("21/10/2026", "%d/%m/%Y")
+print(object_data)  # 2026-10-21 00:00:00
+print(type(object_data))  # <class 'datetime.datetime'>
+
+# tomorrow = today + 1 # TypeError: unsupported operand type(s) for +: 'datetime.date' and 'int'
+#  days=0, seconds=0, microseconds=0,
+#                 milliseconds=0, minutes=0, hours=0, weeks=0
+tomorrow = today + timedelta(days=1)
+print(tomorrow)  # 2026-10-22
