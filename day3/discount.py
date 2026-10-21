@@ -45,3 +45,7 @@ print(type(object_data))  # <class 'datetime.datetime'>
 #                 milliseconds=0, minutes=0, hours=0, weeks=0
 tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2026-10-22
+
+products = [
+
+]
