@@ -12,6 +12,10 @@ class Human:
     # pass
     """Klasa Human opisująca człowieka w pythonie"""
 
+    imie = ""
+    wiek = None
+    plec = "k"
+
 
 cz1 = Human()
 print(cz1)
@@ -22,3 +26,15 @@ print(Human.__doc__)  # Klasa Human opisująca człowieka w pythonie
 # cd day4 - wejscie do katalogu day4
 # pydoc -b - serwer dokumentacji
 # pydoc -w kl1 - plik html z dokumentacją
+
+print(cz1.wiek)
+print(cz1.imie)
+print(cz1.plec)
+
+cz1.imie = "Radek"
+cz1.wiek = 55
+cz1.plec = "m"
+
+print(cz1.wiek)  # 55
+print(cz1.imie)  # Radek
+print(cz1.plec)  # m
