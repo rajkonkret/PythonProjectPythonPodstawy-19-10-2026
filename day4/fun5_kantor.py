@@ -6,13 +6,31 @@
 def kantor(waluta):
     print("Otwieram kantor")
 
-    def usd():
-        print("Wymieniam usd")
+    def usd(kwota=0):
+        print(f"Wymieniam {kwota} usd na {kwota * 3.88}")
 
-    def eur():
-        print("Wymieniam eur")
+    def eur(kwota=0):
+        print(f"Wymieniam {kwota} eur na {kwota * 4.35}")
 
     if waluta == "eur":
-        return eur
+        return eur  # zwracamy adres funkcji, referencje
     else:
         return usd
+
+
+kantor_usd = kantor("usd")
+kantor_eur = kantor("eur")
+
+kantor_eur(1000)
+kantor_eur(1000)
+kantor_eur(1000)
+kantor_eur(1000)
+kantor_eur(1000)
+
+kantor_usd(500)
+kantor_usd(500)
+kantor_usd(500)
+kantor_usd(500)
+kantor_usd(500)
+# Wymieniam 1000 eur na 4350.0
+# Wymieniam 500 usd na 1940.0
