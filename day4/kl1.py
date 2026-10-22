@@ -38,3 +38,14 @@ cz1.plec = "m"
 print(cz1.wiek)  # 55
 print(cz1.imie)  # Radek
 print(cz1.plec)  # m
+
+cz2 = Human()
+cz2.imie = "Anna"
+cz2.wiek = 35
+
+print(cz2.wiek)
+print(cz2.imie)
+print(cz2.plec)
+# 35
+# Anna
+# k
