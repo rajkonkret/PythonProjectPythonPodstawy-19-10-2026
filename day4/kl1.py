@@ -32,6 +32,9 @@ class Human:
         else:
             print("Ruszyłam w drogę")
 
+    def __str__(self) -> str:
+        return f"{self.imie=} {self.wiek=} {self.plec=}"
+
 
 cz1 = Human()
 print(cz1)
@@ -75,3 +78,9 @@ cz1.ruszaj()
 cz2.ruszaj()
 # Ruszyłem w drogę
 # Ruszyłam w drogę
+
+# po nadpisaniu __str__
+print(cz1)
+# self.imie='Radek' self.wiek=55 self.plec='m'
+print(cz2)
+# self.imie='Anna' self.wiek=35 self.plec='k'
