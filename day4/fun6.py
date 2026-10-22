@@ -1,6 +1,10 @@
 # napisac funkcję obliczającą średnią ocen
 # ma dziłać z dowolną liczbą argumentów
 # ma obsłużyć błedy
+# statistics - funkcje statystyczne np.: średnia, mediana
+# dodac imię ucznia
+import statistics
+
 
 def srednia(*cyfry):  # dowolna ilosc elementów przekazanych po pozycji
     print(cyfry)
@@ -20,6 +24,7 @@ def srednia(*cyfry):  # dowolna ilosc elementów przekazanych po pozycji
     else:
         print(f"Srednia wynosi: {avg}")
         print(f"Srednia wynosi: {avg_p}")
+        print(f"Srednia wynosi: {statistics.mean(cyfry)}")
     finally:
         print("Nasstępny uczeń")
 
