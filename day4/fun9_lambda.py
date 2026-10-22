@@ -25,3 +25,32 @@ print(wiek(10))  # nastolatek
 print(wiek(17))  # nastolatek
 print(wiek(18))  # dorosły
 print(wiek(25))  # dorosły
+
+# mapowanie danych
+lista = [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
+
+# stworzyc listę z elementów tej listy pomnozone przez 2
+
+l1 = []
+for i in lista:
+    l1.append(i * 2)
+print(l1)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+l2 = [i * 2 for i in lista]
+print(l2)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+
+def zmien(x):
+    return x * 2
+
+
+l3 = []
+for i in lista:
+    l3.append(zmien(i))
+print(l3)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# map() - wykonuje funkcję na kolejnych argumentach kolekcji
+# funkcja wyższego rzędu - jako argument przyjmuje inną funkcję
+
+print(f"Zastosowanie map():  {list(map(zmien, lista))}")
+# Zastosowanie map():  [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
