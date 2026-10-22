@@ -84,3 +84,9 @@ print(cz1)
 # self.imie='Radek' self.wiek=55 self.plec='m'
 print(cz2)
 # self.imie='Anna' self.wiek=35 self.plec='k'
+
+lista = [cz1, cz2]
+for i in lista:
+    i.ruszaj()
+# Ruszyłem w drogę
+# Ruszyłam w drogę
