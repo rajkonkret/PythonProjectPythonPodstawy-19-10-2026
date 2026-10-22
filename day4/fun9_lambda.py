@@ -54,3 +54,36 @@ print(l3)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
 
 print(f"Zastosowanie map():  {list(map(zmien, lista))}")
 # Zastosowanie map():  [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# lambda jako funkcja anonimowa
+# użycie w miejscu deklaraacji
+print(f"Zastosowanie map():  {list(map(lambda x: x * 2, lista))}")
+# Zastosowanie map():  [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+print(f"Zastosowanie map():  {list(map(lambda x: x * 3, lista))}")
+# Zastosowanie map():  [3, 6, 42, 72, 150, 201, 240, 300, 600, 1500]
+print(f"Zastosowanie map():  {list(map(lambda x: x * 4, lista))}")
+# Zastosowanie map():  [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
+
+# filtrowanie danych
+l4 = []
+for i in lista:
+    if i < 3:
+        l4.append(i)
+print(l4)
+# [1, 2]
+
+# filter()
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 3, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 10, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 200, lista))}")
+
+# Zastosowanie filter(): [1, 2]
+# Zastosowanie filter(): [14, 24, 50, 67, 80, 100, 200, 500]
+# Zastosowanie filter(): [500]
+
+# większe od 3 i mniejsze od 100
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 3 and x < 100, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: 3 < x < 100, lista))}")
+# Zastosowanie filter(): [14, 24, 50, 67, 80]
+# Zastosowanie filter(): [14, 24, 50, 67, 80]
+# reduce()
