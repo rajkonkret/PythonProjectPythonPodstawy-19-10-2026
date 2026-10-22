@@ -48,3 +48,16 @@ print(data)
 # {'name': 'Radek', 'age': 40, 'czy_pali': None}
 print(type(data))
 # <class 'dict'>
+
+
+# zamiana słownika na json (tekst)
+json_text = json.dumps(data)
+print(json_text)  # {"name": "Radek", "age": 40, "czy_pali": null}
+print(type(json_text))  # <class 'str'>
+
+# zmina jsona na słownik
+dict_json = json.loads(json_text)
+print(type(dict_json))  # <class 'dict'>
+print(dict_json)  # {'name': 'Radek', 'age': 40, 'czy_pali': None}
+
+print("Imię pacjenta:", dict_json['name'])  # Imię pacjenta: Radek
