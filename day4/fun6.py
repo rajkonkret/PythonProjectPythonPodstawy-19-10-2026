@@ -6,7 +6,7 @@
 import statistics
 
 
-def srednia(*cyfry):  # dowolna ilosc elementów przekazanych po pozycji
+def srednia(name=None, *cyfry):  # dowolna ilosc elementów przekazanych po pozycji
     print(cyfry)
 
     count = len(cyfry)
@@ -22,9 +22,9 @@ def srednia(*cyfry):  # dowolna ilosc elementów przekazanych po pozycji
     except Exception as e:
         print("Bład:", e)
     else:
-        print(f"Srednia wynosi: {avg}")
-        print(f"Srednia wynosi: {avg_p}")
-        print(f"Srednia wynosi: {statistics.mean(cyfry)}")
+        print(f"Srednia dla ucznia {name} wynosi: {avg}")  # Srednia dla ucznia Radek wynosi: 7.0
+        print(f"Srednia dla ucznia {name} wynosi: {avg_p}")  # Srednia dla ucznia Radek wynosi: 7.0
+        print(f"Srednia dla ucznia {name} wynosi: {statistics.mean(cyfry)}")  # Srednia dla ucznia Radek wynosi: 7
     finally:
         print("Nasstępny uczeń")
 
@@ -32,3 +32,4 @@ def srednia(*cyfry):  # dowolna ilosc elementów przekazanych po pozycji
 srednia()  # ()
 srednia(1)  # (1,)
 srednia(11, 2)  # (11, 2)
+srednia("Radek", 7, 7, 7, 7, 6, 7, 8)
