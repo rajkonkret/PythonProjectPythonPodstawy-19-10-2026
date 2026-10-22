@@ -10,8 +10,18 @@ def dodaj():
 
 
 # funkcja odejmij, z trzema argumentami domyślnymi
+def odejmij(a=0, b=0, c=0):
+    return a - b - c
+
 
 print(dodaj())  # 107
 
 wynik = dodaj()
 print("Wynik:", wynik)
+
+print(odejmij())
+print(odejmij(1))
+print(odejmij(1, 2))
+print(odejmij(1, 2, 3))
+print(odejmij(c=1, a=2, b=3))
+print(odejmij(1, c=9))  # -8
