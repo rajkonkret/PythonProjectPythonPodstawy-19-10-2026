@@ -62,3 +62,6 @@ car.licznik()  # Prędkość wynosi: 0 km/h
 # Zmiana biegu
 # Zmiana biegu
 # Prędkość wynosi: 0 km/h
+
+# enkapsulacja - hermetyzowanie (pola prywatne)
+# i wystawianie metod do zapisu i odczytu tych pól
