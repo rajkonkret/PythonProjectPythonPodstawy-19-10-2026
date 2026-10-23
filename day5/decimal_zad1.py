@@ -21,3 +21,6 @@ precyzja = Decimal('0.00')
 
 podatek = Decimal('0.23')
 
+kwota_z_podatkiem = kwota1 * (1 + podatek)
+print("Kwota z podatkiem:", kwota_z_podatkiem)  # Kwota z podatkiem: 12.6075
+print("Kwota z podatkiem:", kwota_z_podatkiem.quantize(precyzja))  # Kwota z podatkiem: 12.61
