@@ -22,6 +22,10 @@ try:
     c.execute(query)
     conn.commit()
 
+    insert = "INSERT INTO developers (id,name,email,salary) VALUES (1,'Radek','raj@raj.pl',5000);"
+    c.execute(insert)
+    conn.commit()
+
 except sqlite3.Error as e:
     print("Błąd:", e)
 finally:
