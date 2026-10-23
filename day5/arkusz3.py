@@ -20,3 +20,13 @@ print(df)
 # 3     PHP  18000   15 Days       500
 
 df.to_excel('courses.xlsx')
+df.to_excel('courses_no_index.xlsx', index=False)
+
+pivot_df = pd.pivot_table(df, values="Discount", index="Courses")
+print(pivot_df)
+#          Discount
+# Courses
+# PHP         500.0
+# Pandas     1500.0
+# Python      800.0
+# Spark      2000.0
