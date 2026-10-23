@@ -38,3 +38,5 @@ finally:
         print("Połaczenie zostało zamknięte")
 # Baza danych została podłaczona
 # Połaczenie zostało zamknięte
+
+# pgadmin, dbeaver, sqldeveloper, TablePlus, DBBrowser, DB sqlite browser
