@@ -14,3 +14,5 @@ def hej():
 
 
 hej()  # Hej!!!
+
+# zeby funkcja dekorator zaminiała wnik dziłania funkji na upper()
