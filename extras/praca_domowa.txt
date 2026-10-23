@@ -1,8 +1,10 @@
 Zadanie:
-Napisz program, który wczytuje jedną linię tekstu zawierającą liczby całkowite oddzielone spacjami i wypisuje na ekranie listę (w notacji Pythona) kwadratów tylko tych liczb, które są parzyste. Do stworzenia listy użyj *list comprehension*.
+Napisz program, który wczytuje jedną linię tekstu zawierającą liczby
+ całkowite oddzielone spacjami i wypisuje na ekranie listę (w notacji Pythona) kwadratów tylko tych liczb, które są parzyste.
+ Do stworzenia listy użyj *list comprehension*.
 
 Wejście:
-Jedna linia zawierająca dowolną liczbę (≥ 0) liczb całkowitych rozdzielonych spacjami, np.:
+Jedna linia zawierająca dowolną liczbę liczb całkowitych rozdzielonych spacjami, np.:
 
 
 3 4 7 8 10

@@ -153,3 +153,4 @@ text mode (default)
 
 open for updating (reading and writing)
 
+#  git rm --cached .\day5\.env -f
