@@ -15,4 +15,7 @@ plt.pie(
 plt.title("Wykres kołowy")
 
 plt.axis('equal')
+
+plt.savefig('pie.png')
+
 plt.show()
